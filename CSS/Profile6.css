@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.outer{
+    background-color: rgb(235, 230, 230);
+    height: 575px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+.inner{
+    display: flex;
+    background-color: white;
+    height: 300px;
+    width: 900px;
+}
+.one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url(../images/profile/img-4.png);
+    background-size: cover; /* Ensures the image covers the container */
+    background-position: center; /* Centers the image within the container */
+    height: 300px;
+    width: 380px;
+}
+.one img{
+    width: 100%;
+  height: 100%;
+    object-fit: cover; /* Ensures the image covers the container area */
+  object-position: center; /* Centers the image within the container */
+}
+.profile{
+    height: 100px;
+    width: 100px;
+}
+.profile img{
+    border-radius: 50px;
+    outline: 5px solid white;
+}
+.two{
+    
+    font-family: 'Nunito', sans-serif;
+    margin-top: 40px;
+    margin-left: 40px;
+    font-size: large;
+}
+.two p{
+    color: rgb(158, 157, 157);
+}
+.two span{
+    color: rgb(158, 157, 157);
+    
+}
+.fa-solid{
+    color: black;
+    
+}
+

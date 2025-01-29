@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container::before {
+    content: ""; /* Needed to make the pseudo-element display */
+    background: url(../images/white-wave.svg), linear-gradient(to right, #3b82f6, #06b6d4); /* Gradient on top of the image */
+    background-size: cover; /* Ensures the background image covers the entire area */
+    background-position: center; /* Centers the background image */
+    position: absolute; /* Positions the pseudo-element absolutely within the container */
+    top: 0; /* Aligns the pseudo-element to the top of the container */
+    left: 0; /* Aligns the pseudo-element to the left of the container */
+    right: 0; /* Ensures the pseudo-element spans the entire width */
+    bottom: 0; /* Ensures the pseudo-element spans the entire height */
+    padding-top: 12rem; /* Adds padding to the top */
+    padding-bottom: 12rem; /* Adds padding to the bottom */
+    transform: rotateX(180deg) rotateY(180deg); /* Flips the pseudo-element vertically */
+    z-index: -1; /* Ensure the pseudo-element is behind the content */
+}
+.inner {   
+    background-color: white;
+    height: 500px;
+    width: 800px;
+    border: 2px solid white; /* Dark border color */
+    border-radius: 10px;
+   
+    margin-top: 50px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Blakish shadow around the box */
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.div1{
+display: flex;
+align-items: center;
+}
+.stats{
+    margin: 40px 20px 15px 20px;
+    line-height: 1.5;
+}
+.div2 img{
+    height: 110px;
+    width: auto;
+    border-color: white;
+    border-radius: 60px;
+    object-fit: cover;
+    margin-top: -25px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.div3 button{
+    background-color: rgb(20 184 166) ;
+    color: white;
+    border-color: white;
+    height: 35px;
+    width: 90px;
+    margin: 40px 45px 15px 20px;
+    border-radius: 8px;
+}
+/* General container styling */
+.text {
+    display: flex; /* Flexbox to manage layout */
+    align-items: center;
+    flex-direction: column; /* Stack children (stacy) vertically */
+    /* width: 300px;  */
+    padding: 20px; /* Add padding around the container */
+    margin-top: 20px; /* Add top margin for spacing */
+}
+
+/* Styling for each "stacy" class (each line) */
+.stacy {
+    margin-bottom: 15px;  /* Space between each .stacy element */
+}
+
+/* Specific styling for the <h3> element (name) */
+.stacy h3 {
+    font-size: 18px; /* Set the font size for the name */
+    font-weight: bold; /* Make the name bold */
+    margin-bottom: 5px; /* Add a little space below the name */
+}
+
+/* Specific styling for the <p> elements (location and role) */
+.stacy p {
+    font-size: 14px; /* Set font size for the description */
+    color: #666; /* Change text color for better readability */
+    margin: 0; /* Remove default margin */
+    /* width: 300px; */
+}
+.last{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* width: 300px; */
+    padding: 20px; 
+    margin-top: 90px;
+    border-top: 2px dotted #dad7d7;  /* Dotted line on the top */
+}
+.foot p{
+    font-size: 14px; /* Set font size for the description */
+    color: #666; /* Change text color for better readability */
+    margin: 0; /* Remove default margin */
+}
+.foot h3{
+    font-size: 18px; /* Set the font size for the name */
+    font-weight: bold; /* Make the name bold */
+    margin-bottom: 5px; /* Add a little space below the name */
+    margin: 30px;
+    color: #3b82f6;
+}

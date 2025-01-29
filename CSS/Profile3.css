@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    margin: 0;                    /* Remove any default margin on the body */
+    height: 100vh;                /* Make the body take up full height of the viewport */
+    display: flex;                /* Use Flexbox on the body to center the .main div */
+    justify-content: center;      /* Horizontally center the .main div */
+    align-items: center;          /* Vertically center the .main div */
+    background-color: #e0e0e0;    /* Optional background color for the body */
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    padding: 20px;                /* Optional: Add padding inside the .main container */
+    border: 2px solid white;      /* Black border around the .main div */
+    border-radius: 10px;          /* Rounded corners for the .main div */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* Blackish shadow effect */
+}
+.left{
+    width: 400px;
+}
+.profile-photo {
+    width: 150px;                /* Set width of the container */
+    height: 150px;               /* Set height of the container */
+    border-radius: 50%;          /* Make the container circular */
+    overflow: hidden;            /* Hide anything outside the container */
+    border: 3px solid white;      /* Optional: Add a border around the photo */
+    margin: 0 auto;              /* Center the container if needed */
+    position: relative;          /* Position relative to the parent div */
+    top: -40px;                      /* Position the container at the top */
+}
+
+.profile-photo img {
+    width: 100%;                 /* Make the image fill the container */
+    height: 100%;                /* Make the image fill the container */
+    object-fit: cover;           /* Ensure the image covers the container without distortion */
+}
+.profile-info h1 {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+}
+
+.profile-info p {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.profile-info button {
+    justify-content: center;
+    font-size: 16px;
+    color: #007bff;                  /* Blue text color */
+    background-color: #d3d3d3;       /* Light grey background */
+    border: none;                    /* Remove border */
+    padding: 10px 20px;               /* Padding around the text */
+    margin: 10px 5px;                 /* Space between buttons */
+    border-radius: 5px;               /* Rounded corners for buttons */
+    cursor: pointer;                 /* Change cursor to pointer on hover */
+    transition: all 0.3s ease;        /* Smooth transition effect for button */
+}
+
+.profile-info button:hover {
+    background-color: #a3c4f3;        /* Light blue background on hover */
+    color: white;                     /* White text color on hover */
+}
+
+.profile-info button:active {
+    background-color: #87a1d0;        /* Slightly darker light blue when clicked */
+}
+.right{
+    width: 300px;
+}
+.Popularity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;        /* Center horizontally */
+    justify-content: center;    /* Center vertically */
+    padding: 20px;
+    background-color: #e0e0e0;
+    width: 200px;               /* Set a fixed width for the container */
+    height: auto;               /* Let height adjust based on content */
+    border-radius: 10px;        /* Optional: rounded corners */
+    margin: 20px auto;          /* Center the div in the body */
+}
+
+.Popularity h1, .Popularity p {
+    text-align: center;         /* Center text inside each element */
+    margin: 10px 0;             /* Add space between the elements */
+    padding: 10px;              /* Padding inside each element */
+    border-radius: 5px;         /* Rounded corners for individual elements */
+    width: 100%;                /* Make them fill the width of the parent div */
+    transition: background-color 0.3s ease;  /* Smooth background color transition */
+}
+
+/* Hover effect */
+.Popularity h1:hover, .Popularity p:hover {
+    background-color: grey;     /* Turn background color to grey on hover */
+    color: white;               /* Change text color to white for contrast */
+}

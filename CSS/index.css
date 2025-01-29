@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Nunito, sans-serif;
+}
+
+p {
+  color: rgb(104, 97, 97);
+}
+
+button {
+  color: white;
+  background-color: blue;
+  border: 2px solid white;
+  border-radius: 5px;
+  height: 30px;
+  width: 60px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background and scaling */
+}
+
+button:hover {
+  background-color: darkblue; /* Change the background color on hover */
+  transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(230, 223, 223);
+  line-height: 2rem;
+  height: 60vh;
+  width: auto;
+  border-radius: 0 0 50% 50% / 0 0 6% 6%;
+}
+
+.center {
+  text-align: center;
+  width: 630px;
+}
+
+img {
+  height: 40px;
+  width: auto;
+}
+
+.demo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  text-align: center;
+}
+
+.profiles-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(230, 223, 223);
+  color: black;
+  padding-top: 20px;
+  margin: auto;
+  padding-bottom: 15px;
+
+  /* height: 2000px; */
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 400px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  text-align: center;
+  height: 250px;
+  
+}
+
+.profile-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+ 
+  height: 10vh;
+  align-items: center;
+}
+
+#gradient {
+  background-image: linear-gradient(to right, #2563eb, #f472b6);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+@media screen and (max-width: 899px) {
+  .profiles-grid .profile-card {
+    width: 250px;
+    padding-bottom: 8px;
+
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .profiles-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    padding-bottom: 8px;
+  }
+}
+.owner{
+  background: #4cd9fc;
+  color: white;
+  padding: 2px 5px;
+ font-size: large;
+ margin-left: 5px;
+
+}
